@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=CodeMonkey()
+comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ CodeMonkey\r\n
+comment1.params=n
+comment1.target=void\ Countdown(int)
+comment2.params=n
+comment2.target=void\ Countup(int)
+comment3.params=p\ n
+comment3.target=boolean\ Primetime(double,\ double)
+numComments=4
