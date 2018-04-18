@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Fundraiser()
+comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ Fundraiser\r\n
+comment1.params=monataryGoal
+comment1.target=int\ badcollect(int)
+comment2.params=monataryGoal
+comment2.target=double\ collect(double)
+numComments=3

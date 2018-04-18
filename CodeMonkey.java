@@ -16,7 +16,8 @@ public class CodeMonkey
      */
     public CodeMonkey()
     {
-        x=0;
+        String temp = "Watermelon";
+        System.out.println(temp.substring(1,temp.length()-1));
     }
     
     public static void Countdown(int n)
