@@ -44,7 +44,13 @@ public class recursiveTriangle18 extends JApplet
    {
        int[] xMid = {0,0,0,0};
        int[] yMid = {0,0,0,0};
-       System.out.println("end");
+       int[] xMin1 = {0,0,0,0};
+       int[] yMin1 = {0,0,0,0};
+       int[] xMin2 = {0,0,0,0};
+       int[] yMin2 = {0,0,0,0};
+       int[] xMin3 = {0,0,0,0};
+       int[] yMin3 = {0,0,0,0};
+       System.out.println("new");
        page.setColor (Color.blue);
       
        
@@ -58,14 +64,30 @@ public class recursiveTriangle18 extends JApplet
        }
        else
        {
-            //find the mid points of each line segment
+            //makes the big part
             for (int i=0; i<3; i++)
             {
-                xMid[i]=xPos[i]+xPos[i+1]/2;
-                yMid[i]=yPos[i]+yPos[i+1]/2;
+                xMid[i]=(xPos[i]+xPos[i+1])/2;
+                System.out.println(xMid[i]);
+                yMid[i]=(yPos[i]+yPos[i+1])/2;
+                System.out.println(yMid[i]);
             }
             xMid[3]=xMid[0];
             yMid[3]=yMid[0];
+            
+            
+            //makes the smaller part, this is recursed 
+            //x portion
+            xMin1[0]=(xMid[1]+xMid[2])/2;
+            xMin1[1]=(xMin1[0]+xMid[1])/2;
+            xMin1[2]=(xMin1[0]+xMid[2])/2;
+            xMin1[3]=xMin1[0];
+            
+            //y portion
+            yMin1[0]=yMid[1];
+            xMin1[1]=yMin1[0]+((yMid[1]-yMid[0])/2);
+            xMin1[2]=xMin1[1];
+            yMin1[3]=yMin1[0];
 
             //draw the Triangle
             page.drawPolyline (xMid, yMid, xMid.length);
