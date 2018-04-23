@@ -18,10 +18,15 @@ public class DivisorCalc
         
     }
     
-    public static gcd(int num1, int num2)
+    public static void gcd(int num1, int num2)
     {
-        //
-        if (num2<=num1 && )
+        int temp;
+        if (num2<=num1 && (num1%num2) == 0)
+            temp=0;//num2
+        else if ( num1<num2)
+            temp=0;
+        else 
+            temp=0;
     
     }
 

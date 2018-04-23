@@ -41,6 +41,7 @@ public class Fundraiser
     public static double collect(double monataryGoal)
     {
         double temp=0;
+        System.out.println(monataryGoal);
         if (monataryGoal <= 1)//base case
             return 1;
         else
